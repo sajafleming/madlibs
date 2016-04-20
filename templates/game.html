@@ -1,11 +1,7 @@
-<!doctype HTML>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-
-    <form action="/madlibs">
+{%extends 'base.html'%}
+{% block header %}Want to Play a Game{% endblock %}
+{% block content %}
+    <form action="/madlibs" method="POST">
     Please pick a color
     <select name="color">
         <option value="red">Red</option>
@@ -19,6 +15,9 @@
 
     </select>
     <div>
+    Please enter a proper name <input type="text" name="propername">
+    <div>
+    <div>
     Please enter a noun <input type="text" name="noun">
     <div>
     Please enter a adjective <input type="text" name="adjective">
@@ -27,5 +26,4 @@
     <input type="submit">
 
     </form>
-</body>
-</html>
+{% endblock %}

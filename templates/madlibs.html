@@ -1,13 +1,8 @@
-<!doctype HTML>
-<html>
-    <head>
-        <title></title>
-    </head>
 
-    <body>
+{%extends 'base.html'%}
+{% block header %}Madlib Game Page{% endblock %}
 
-        There once was a {{color}} {{noun}} sitting in the Hackbright lab. When {{name}} went to pick it up, it burst into flames in a totally {{adjective}} way!
+{% block content %}
+        There once was a {{color}} {{noun}} sitting in the Hackbright lab. When {{propername}} went to pick it up, it burst into flames in a totally {{adjective}} way!
 
-    </body>
-
-</html>
+{% endblock %}
